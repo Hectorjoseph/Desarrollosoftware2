@@ -1,4 +1,4 @@
-# Desarrollo-Software
+# Desarrollo-Software2
 
 Idea principal:
 El proyecto es de una Plataforma web para explorar lugares de interés utilizando Google Maps, con funcionalidades de clima en tiempo real, tráfico, y rutas óptimas.
