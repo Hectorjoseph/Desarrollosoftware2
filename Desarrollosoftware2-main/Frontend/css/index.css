@@ -30,7 +30,19 @@ body {
     color: white;
     padding: 1rem 2rem;
     box-shadow: var(--shadow-md);
+
+    /* Estilo para hacerlo fijo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el header se mantenga por encima de otros elementos */
 }
+
+main {
+    margin-top: 80px; /* Ajusta el valor según el alto de tu encabezado */
+}
+
 
 .header-container {
     max-width: 1200px;
