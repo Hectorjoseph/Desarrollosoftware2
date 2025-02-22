@@ -274,6 +274,80 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Estilos para los botones de autenticación */
+.auth-buttons, .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.auth-btn {
+    background: none;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.user-menu {
+    color: white;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
 /* Footer */
 .main-footer {
     background: var(--dark-bg);
@@ -339,5 +413,10 @@ main {
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .auth-buttons, .user-menu {
+        margin-top: 1rem;
+        justify-content: center;
     }
 }
