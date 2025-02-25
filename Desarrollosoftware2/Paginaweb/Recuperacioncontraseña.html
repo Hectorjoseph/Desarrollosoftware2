@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - Explorador de lugares únicos</title>
+    <link rel="stylesheet" href="../Frontend/css/index.css">
+    <link rel="stylesheet" href="../Frontend/css/Formularioinicio.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Recuperar Contraseña</h2>
+            
+            <!-- Paso 1: Solicitar Email -->
+            <form id="recoveryForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <p class="recovery-info">Ingresa tu correo electrónico y te enviaremos un código para restablecer tu contraseña.</p>
+                <button type="submit" class="login-button">Enviar código</button>
+            </form>
+            
+            <!-- Paso 2: Verificar código (inicialmente oculto) -->
+            <form id="verificationForm" class="login-form hidden">
+                <div class="form-group">
+                    <label for="verification-code">Código de verificación</label>
+                    <input type="text" id="verification-code" name="verification-code" required>
+                    <span class="error-message" id="code-error"></span>
+                </div>
+                <p class="recovery-info">Ingresa el código de verificación enviado a tu correo electrónico.</p>
+                <button type="submit" class="login-button">Verificar código</button>
+            </form>
+            
+            <!-- Paso 3: Nueva contraseña (inicialmente oculto) -->
+            <form id="resetForm" class="login-form hidden">
+                <div class="form-group">
+                    <label for="new-password">Nueva contraseña</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                    <span class="error-message" id="new-password-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar contraseña</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                <button type="submit" class="login-button">Restablecer contraseña</button>
+            </form>
+            
+            <div class="additional-options">
+                <a href="Formularioinicio.html">Volver a inicio de sesión</a>
+                <a href="index.html">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+    <script src="../Frontend/js/Recuperacioncontraseña.js"></script>
+</body>
+</html>

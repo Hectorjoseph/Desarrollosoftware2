@@ -1,0 +1,105 @@
+/* login.css */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: var(--dark-bg);
+    margin-bottom: 1.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    display: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #3d8b40;
+}
+
+.additional-options {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.additional-options a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.additional-options a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    border-color: #dc3545 !important;
+}

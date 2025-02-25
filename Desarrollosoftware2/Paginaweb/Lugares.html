@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares - Explorador de lugares únicos</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Frontend/css/index.css">
+    <link rel="stylesheet" href="../Frontend/css/lugares.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper JS para el carrusel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="../Frontend/js/lugares.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header fixed-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-map-marked-alt logo-icon"></i>
+                <h2 class="brand-name">Explorador de Lugares</h2>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="lugares.html" class="nav-link active">Lugares</a>
+                <a href="Sobrenosotros.html" class="nav-link">Sobre nosotros</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="lugares-main">
+        <section class="lugares-hero">
+            <h1>Descubre Medellín</h1>
+            <p>Explora los lugares más emblemáticos y encantadores de la ciudad</p>
+        </section>
+
+        <section class="featured-places">
+            <h2>Lugares Destacados</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Cafeterías -->
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2087" data-lon="-75.5708" data-name="Pergamino Café">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCVhiLEQ7C-qBTQgbUEzcJEejI4I9v6Vv7w&s" alt="Pergamino Café">
+                            <div class="place-info">
+                                <h3>Pergamino Café</h3>
+                                <p>Café de especialidad con ambiente acogedor en El Poblado</p>
+                                <span class="category">Cafetería</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2104" data-lon="-75.5713" data-name="Café Velvet">
+                            <img src="https://qul.imgix.net/76ebd0d0-7b72-41cb-b2db-5e4c9ef221ea/512697_sld.jpg" alt="Café Velvet">
+                            <div class="place-info">
+                                <h3>Café Velvet</h3>
+                                <p>Café artesanal con terraza y vista a la ciudad</p>
+                                <span class="category">Cafetería</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Museos -->
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2518" data-lon="-75.5636" data-name="Museo de Antioquia">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/9044a9eb-2d84-4e57-93ce-1e1ed9963140/museum-of-antioquia.jpeg" alt="Museo de Antioquia">
+                            <div class="place-info">
+                                <h3>Museo de Antioquia</h3>
+                                <p>Arte y cultura en el corazón de Medellín</p>
+                                <span class="category">Museo</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2297" data-lon="-75.5682" data-name="Museo de Arte Moderno">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKIDA4P14JHYUpx7Cis4fqEsWHAEx0Dga9Eg&s" alt="MAMM">
+                            <div class="place-info">
+                                <h3>Museo de Arte Moderno</h3>
+                                <p>Arte contemporáneo en Ciudad del Río</p>
+                                <span class="category">Museo</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parques -->
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2825" data-lon="-75.5016" data-name="Parque Arví">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR05MeVn-LnLBKC4GLPETR1ioMq8nOlXMPzjw&s" alt="Parque Arví">
+                            <div class="place-info">
+                                <h3>Parque Arví</h3>
+                                <p>Ecoturismo y naturaleza en las montañas</p>
+                                <span class="category">Parque</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2700" data-lon="-75.5651" data-name="Jardín Botánico">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTJkM0xH71LicJ-PXbLvImByBbM78X4kwqg&s" alt="Jardín Botánico">
+                            <div class="place-info">
+                                <h3>Jardín Botánico</h3>
+                                <p>Oasis verde en el centro de la ciudad</p>
+                                <span class="category">Parque</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="place-card" data-lat="6.2697" data-lon="-75.5659" data-name="Parque Explora">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9SdwnZNC-ERZBEfCmmqG9DcvdJ6mFrH8qg&s" alt="Parque Explora">
+                            <div class="place-info">
+                                <h3>Parque Explora</h3>
+                                <p>Lugar donde las ciencias son únicas y divertidas</p>
+                                <span class="category">Parque</span>
+                                <button class="ver-en-mapa">Ver en Mapa <i class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explorador de Lugares</h3>
+                <p>Tu guía perfecta para descubrir lugares increíbles.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <a href="index.html">Inicio</a>
+                <a href="lugares.html">Lugares populares</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Explorador de Lugares. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
