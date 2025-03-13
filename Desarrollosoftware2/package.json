@@ -1,0 +1,19 @@
+{
+  "name": "desarrollosoftware2",
+  "version": "1.0.0",
+  "description": "Idea principal: El proyecto es de una Plataforma web para explorar lugares de interés utilizando Google Maps, con funcionalidades de clima en tiempo real, tráfico, y rutas óptimas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
+  }
+}
